@@ -12,11 +12,10 @@
     <div class="cell">1</div>
         <div class="active">
 
-    <ul class="kwadrat" v-for="iloscRows in rows">
-        <li v-for="iloscColumns in columns">
-            <div class="cell">1</div>
-        </li>
-    </ul>
+            <div class="kwadrat" v-for="rows in rows">
+                <div class="cell" v-for="columns in columns">
+                    <p>{{ rows }},{{ columns }}</p>
+    
     </div>
     </div>
 
