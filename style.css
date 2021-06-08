@@ -21,9 +21,3 @@
     display: flex;
     flex-wrap:wrap;
 }
-.li{
-    list-style: none;
-}
-ul{
-    list-style: none;
-}
