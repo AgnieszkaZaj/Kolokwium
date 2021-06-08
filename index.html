@@ -14,11 +14,11 @@
 
             <div class="kwadrat" v-for="rows in rows">
                 <div class="cell" v-for="columns in columns">
+                    <div class="cell" :class="{active: (active[0]==rows && active[1]==columns)}" @click="active=[rows,columns]"></div>
                     <p>{{ rows }},{{ columns }}</p>
-    
-    </div>
-    </div>
-
+                </div>
+            </div>
+        </div>
     <script>
     var app = new Vue({
         el: '#app',
@@ -26,7 +26,7 @@
             message: 'Powodzenia',
             rows: 10,
             columns:10,
-            active: '1,1'
+            active: [1,1]
         }
     })
     </script>
